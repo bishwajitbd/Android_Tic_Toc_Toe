@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.bishwajit.tic_tac_toe.MainActivity">
+
+    <item android:title="Start Game"
+        android:id="@+id/start_game_menu"
+        app:showAsAction="ifRoom"></item>
+    <item android:title="Scoreboard"
+        android:id="@+id/Scoreboard_menu"
+        android:icon="@drawable/ic_scoreboard"
+        app:showAsAction="ifRoom"></item>
+
+    <item android:title="Start Game"
+        android:id="@+id/start_game"
+        app:showAsAction="never"></item>
+    <item android:title="View Scoreboard"
+        android:id="@+id/view_scoreboard"
+        app:showAsAction="never"></item>
+    <item android:title="Select Player 1"
+        android:id="@+id/select_payer_1"
+        app:showAsAction="never"></item>
+    <item android:title="Select Player 2"
+        android:id="@+id/select_payer_2"
+        app:showAsAction="never"></item>
+    <item android:title="Add Player"
+        android:id="@+id/add_player"
+        app:showAsAction="never"></item>
+</menu>

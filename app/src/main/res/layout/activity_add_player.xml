@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlayer">
+
+
+    <EditText
+        android:id="@+id/add_player"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/delete_update"
+        android:layout_marginTop="25dp"
+        android:layout_toStartOf="@+id/btnUpdate"
+        android:hint="@string/hintTxtItem"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDeleteUpdate"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/add_player"
+        android:text="@string/lblBtnAdd" />
+
+    <EditText
+        android:id="@+id/delete_update"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintTxtItemDel"
+        android:layout_alignParentLeft="true"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnDeleteUpdate"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="0dp"
+
+        android:layout_toRightOf="@id/delete_update"
+        android:text="@string/lblBtnDel" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="68dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/delete_update"
+        android:text="@string/lblBtnUpdate" />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_below="@id/add_player"
+        android:layout_marginTop="14dp"
+        android:gravity="center_horizontal"
+        android:text="@string/lblempty" />
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:layout_below="@android:id/empty"
+        android:layout_gravity="center"
+        android:layout_marginTop="34dp"
+        android:choiceMode="multipleChoice"></ListView>
+
+
+
+</android.widget.RelativeLayout>

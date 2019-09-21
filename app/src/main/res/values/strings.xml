@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tic-Tac-Toe</string>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="hintTxtItem">Enter an player here ...</string>
+    <string name="hintTxtItemDel">Select player for Delete/Edit</string>
+    <string name="lblBtnAdd">Add Item</string>
+    <string name="lblBtnDel">Delete</string>
+    <string name="lblempty">PLAYERS LIST......</string>
+    <string name="lblBtnUpdate">Edit</string>
+</resources>

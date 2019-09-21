@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlayer">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="66dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="135dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="373dp"
+        android:layout_height="37dp"
+        android:layout_below="@+id/guideline"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@+id/guideline"
+        android:text="Select Player 2 from list below"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/add_player"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="383dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="92dp"
+        android:state_selected="true"/>
+
+    <TextView
+        android:id="@+id/txt_player2"
+        android:layout_width="369dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/add_player"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:background="@android:color/holo_orange_dark"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+</android.widget.RelativeLayout>

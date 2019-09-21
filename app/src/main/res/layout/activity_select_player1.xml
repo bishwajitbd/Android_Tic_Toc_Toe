@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddPlayer">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="66dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="135dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="364dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/guideline"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:text="Select Player 1 from list below"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/add_player"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="369dp"
+        android:layout_height="376dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="135dp"
+        android:state_selected="true" />
+
+    <TextView
+        android:id="@+id/txt_player1"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_player"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</android.widget.RelativeLayout>
